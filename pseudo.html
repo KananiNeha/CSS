@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection{
+            color: red;
+            background: yellow;
+        }
+        ::marker{
+            color: red;
+        }
+        h1::before{
+            content: "i'm before";
+            background-color: black;
+            color: white;
+        }
+        h1::after{
+            content: "i'm after";
+            background-color: black;
+            color: white;
+        }
+        p{
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+        p::first-letter{
+            font-size: 45px;
+            background-color: black;
+            color: white;
+        }
+        p::first-line{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speed Computer</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, voluptates labore nisi recusandae deserunt et maiores facilis impedit vel reiciendis nesciunt repellat laudantium quos adipisci perspiciatis unde sapiente aperiam neque.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <ol>
+        <li>PHP</li>
+        <li>JAVA</li>
+        <li>PYTHON</li>
+    </ol>
+</body>
+</html>

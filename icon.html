@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        #neha{
+            font-size: 100px;
+            color: blue;
+            animation: neha 3s alternate linear infinite;  
+            position: relative;
+        }
+        @keyframes neha{
+            0%{
+                left: 200px;
+                color: pink;
+            }
+            25%{
+                left: 400px;
+                color: red;
+            }
+            50%{
+                left: 600px;
+                color: brown;
+            }
+            75%{
+                left: 800px;
+                color: green;
+            }
+        }
+        #tanvi{
+            animation: neha 3s alternate linear infinite;  
+            position: relative;
+            color: gray;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font Awesome icon library</h1>
+    <p>Some Font Awesome icons:</p>
+    <i class="fa-solid fa-cloud" id="tanvi"></i>
+    <i class="fa-solid fa-truck-medical" id="neha"></i>
+</body>
+</html>
